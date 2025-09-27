@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+body {
+    background-color: #585c68;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+}
+
+.container {
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+
+}
+.container .kotak-kiri{
+    width: 280px;
+    background-color: #333e51;
+
+}
+.container .kotak-kiri .profile{
+    width: 100%;
+    height: 280px;
+    background-color: #7e1e1e;
+
+}
+.container .kotak-kiri .profile img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .kotak-kiri .konten {
+    padding: 0 25px;
+}
+
+.container .resume-item {
+    padding: 25px 0;
+    border-bottom: 2px solid #333e515e;
+}
+
+.container .tittle {
+   margin-bottom: 20px;
+}
+
+.container .kotak-kiri .bold {
+   color: #ffff;
+}
+
+.container .kotak-kiri .reguler {
+   color: #d9e1e4;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.container .kotak-kiri ul li {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.container .kotak-kiri ul li {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.container .kotak-kiri ul li:last-child {
+    margin-bottom: 0;
+
+}
+.container .kotak-kiri ul li .icon {
+   width: 35px;
+   height: 35px;
+   background-color: #ffff;
+   color: #353e4e;
+   border-radius: 50%;
+   margin-right: 15px;
+   font-size: 16px;
+   position: relative;
+}
+
+.container .box-kiri ul li .data {
+    color: #d9e1e4;
+}
+.container .kotak-kiri .resume-skills ul li{
+    display: flex;
+    margin-bottom: 10px;
+    color: #ffff;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .kotak-kiri .resume-skills ul li .skill-name{
+    width: 25%;
+}
+.container .kotak-kiri .resume-skills ul li .skill-progress{
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background-color: #ff5c5c;  
+    position: relative;
+}
+.container .kotak-kiri .resume-skills ul li .skill-progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #ffff;
+}
+.container .kotak-kiri .resume-social .semi-bold{
+    color: #ffff;
+    margin-bottom: 3px;
+}
+
+.semi-bold {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container .kotak-kanan {
+    width: 520px;
+    background-color: #ffff;
+    padding: 25px;
+
+}
+
+.container .kotak-kiri .resume-item:last-child,
+.container .kotak-kanan .resume-item:last-child {
+    border-bottom: 0px;
+}
+
+.container .kotak-kanan .bold {
+    color: #333e51;
+}
+
+.container .kotak-kanan ul li{
+    position: relative;
+}
+
+.container .kotak-kanan ul li .date {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: black;
+}
+.container .kotak-kanan ul li .info {
+    margin-bottom: 20px;
+}
+.container .kotak-kanan ul li:last-child .info {
+    margin-bottom: 0;
+}
+
+/* ini */
+.container .kotak-kanan .resume-education ul,
+.container .kotak-kanan .resume-hobby ul {
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+.container .kotak-kanan .resume-education ul li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #333e51;
+}
+.container .kotak-kanan .resume-education ul li::after
+ {
+    content: "";
+    position: absolute;
+    background-color: #333e51;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 115px;
+}
+
+.container .icon i,
+.container .kotak-kanan .resume-hobby ul li i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .kotak-kanan .resume-hobby ul {
+    display: flex;
+    justify-content: space-between;
+}
+.container .kotak-kanan .resume-hobby ul li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #333e51;
+    border-radius: 50%;
+    position: relative;
+    color: #333e51;
+}
+.container .kotak-kanan .resume-hobby ul li i {
+    font-size: 30px;
+}
+.container .kotak-kanan .resume-hobby ul li::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -52px;
+    width: 50px;
+    background-color: #333e51;
+    height: 2px;
+}
+
+.container .resume-hobby ul li:last-child::before {
+    display: none;
+}
